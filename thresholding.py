@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 
 # Görüntüyü okuma (gri tonlamalı olarak)
-input_image_path = "photo_gray.png"
+input_image_path = "Images/Lenna.png"
 image = cv2.imread(input_image_path, cv2.IMREAD_GRAYSCALE)
 
 # Görüntü boyutlarını al
@@ -23,8 +23,8 @@ for y in range(height):
             output_image[y, x] = 0    # Siyah
 
 # Orijinal ve işlenmiş görüntüyü gösterme
-cv2.imshow("Orijinal Görüntü", image)
-cv2.imshow("İşlenmiş Görüntü", output_image)
+cv2.imshow("Orijinal Goruntu", image)
+cv2.imshow("Islenmis Goruntu", output_image)
 
 # Çıkış için bir tuşa basmayı bekleme
 cv2.waitKey(0)
